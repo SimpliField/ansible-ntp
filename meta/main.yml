@@ -1,0 +1,25 @@
+galaxy_info:
+  author: Sébastien Elet
+  description: Setup ntp
+  company: SimpliField
+  license: license (GPLv2, CC-BY, etc)
+  min_ansible_version: 2
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - utopic
+    - vivid
+    - wily
+    - xenial
+  galaxy_tags:
+  - ntp
+  - date
+  - time
+  - system
+  - sync
+
+dependencies:
+- role: SimpliField.packages
+  packages:
+  - ntp
